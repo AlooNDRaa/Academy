@@ -1,0 +1,10 @@
+Unificacion de codigo, reutilizar lo mas posible. 
+
+Los P suelen tener el mismo estilo, a menos que se deba especificar. 
+
+Agregar los metas
+
+
+Agregar barra de busqueda 
+
+Reto: hacer pantalla a parte para que de mas a opcion de tono. 

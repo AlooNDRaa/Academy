@@ -1,0 +1,62 @@
+body {
+    background-image: url("../imgs/login-page-white\ \(1\).png");
+    background-blend-mode: luminosity;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+
+
+.div-hijo-form {
+    position: relative; 
+    width: 50rem;
+    height: 35rem;
+    background-color: rgba(255, 255, 255, 0.26); 
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255); 
+    padding-top: 2rem;
+}
+
+.svg-icon {
+    position: absolute;
+    z-index: 9;
+    top: 1rem; 
+    right: 6.6rem; 
+    height: auto;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div > h4 {
+    font-size: 2rem;
+}
+
+.h3-form {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+
+}

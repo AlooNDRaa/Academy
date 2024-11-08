@@ -4,27 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/generals.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/loginAndRegister.css">
     <title>Login</title>
 </head>
 <body>
-    <form action="/js/login.js" method="post">
-        <div class="container">
-          <label class="label-form" for="uname"><b>Nombre de usuario</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-      
-          <label class="label-form" for="psw"><b>Contraseña</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <button type="submit">Login</button>
-          <label class="label-form">
-            <input type="checkbox" checked="checked" name="remember"> Recordarme
-          </label>
-        </div>
-      
-        <div class="container">
-          <button type="button" class="cancelbtn">Cancelar</button>
-          <span class="psw">Olvido su <a href="#">contraseña?</a></span>
-        </div>
-      </form>
+  <div class="form-container">
+    <svg class="svg-icon width="317" height="302" viewBox="0 0 317 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_b_671_106)">
+      <ellipse cx="142.047" cy="132.664" rx="142.047" ry="132.664" fill="white" fill-opacity="0.43"/>
+      <path d="M283.593 132.664C283.593 205.625 220.254 264.829 142.047 264.829C63.8399 264.829 0.5 205.625 0.5 132.664C0.5 59.7036 63.8399 0.5 142.047 0.5C220.254 0.5 283.593 59.7036 283.593 132.664Z" stroke="white"/>
+      </g>
+      <g filter="url(#filter1_b_671_106)">
+      <ellipse cx="228.701" cy="180.661" rx="88.2993" ry="84.6679" fill="white" fill-opacity="0.43"/>
+      <path d="M316.5 180.661C316.5 227.126 277.211 264.829 228.701 264.829C180.19 264.829 140.901 227.126 140.901 180.661C140.901 134.196 180.19 96.4929 228.701 96.4929C277.211 96.4929 316.5 134.196 316.5 180.661Z" stroke="white"/>
+      </g>
+      <g filter="url(#filter2_b_671_106)">
+      <ellipse cx="142.595" cy="237.825" rx="65.8131" ry="64.175" fill="white" fill-opacity="0.43"/>
+      <path d="M207.909 237.825C207.909 272.98 178.679 301.5 142.595 301.5C106.512 301.5 77.2822 272.98 77.2822 237.825C77.2822 202.67 106.512 174.15 142.595 174.15C178.679 174.15 207.909 202.67 207.909 237.825Z" stroke="white"/>
+      </g>
+      <defs>
+      <filter id="filter0_b_671_106" x="-9.6" y="-9.6" width="303.293" height="284.529" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="4.8"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_671_106"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_671_106" result="shape"/>
+      </filter>
+      <filter id="filter1_b_671_106" x="106.801" y="62.3929" width="243.799" height="236.536" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="16.8"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_671_106"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_671_106" result="shape"/>
+      </filter>
+      <filter id="filter2_b_671_106" x="16.7822" y="113.65" width="251.626" height="248.35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="30"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_671_106"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_671_106" result="shape"/>
+      </filter>
+      </defs>
+      </svg>      
+    <div class="div-hijo-form">
+      <h3 class="h3-form">AstroShop</h3>
+      <form action="/js/login.js" method="post">
+          <div class="container">
+            <div class="form-text">
+              <h4 class="h4-form">
+                Login
+              </h4>
+            </div>
+            <label class="label-form" for="uname"><b>Nombre de usuario</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+  
+            <label class="label-form" for="email">Email</label>
+            <input type="text" placeholder="Enter email" name="email" required class="email-form">
+        
+            <label class="label-form" for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit">Login</button>
+            <label class="label-form">
+              <input type="checkbox" checked="checked" name="remember"> Recordarme
+            </label>
+            <div class="container">
+              <button type="button" class="cancelbtn">Cancelar</button>
+              <span class="psw">Olvido su <a href="#">contraseña?</a></span>
+            </div>
+          </div>
+        
+        </form>
+    </div>
+  </div>
 </body>
 </html>

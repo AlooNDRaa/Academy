@@ -3,7 +3,9 @@ body {
     background-blend-mode: luminosity;
     background-size: cover;
     margin: 0;
+    background-color: #b994d8;
     padding: 0;
+    height: 100vh; 
 }
 
 .form-container {
@@ -16,22 +18,22 @@ body {
 .div-hijo-form {
     position: relative; 
     width: 53rem;
-    height: 37rem;
+    height: max-content;
     background-color: rgba(255, 255, 255, 0.26); 
     border-radius: 1.2rem;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.719); 
     backdrop-filter: blur(100px); 
     -webkit-backdrop-filter: blur(10px);
     border: 2.5px solid rgba(255, 255, 255, 0.541); 
-    padding-top: 1.2rem;
+    padding-block: 1.2rem;
 }
 
 .svg-icon {
     position: absolute;
     z-index: 9;
-    top: 0.5rem; 
+    top: 0.3rem; 
     right: 6rem; 
-    height: 14rem;
+    height: 13rem;
 }
 
 
@@ -70,8 +72,8 @@ label {
 }
 
 input {
-    background-color: #ffffff;
-    border: none;
+  background-color: rgba(255, 255, 255, 0.678); 
+    border: white 1px solid;
     padding: 0.8rem;
     border-radius: 0.5rem;
     color: black;
@@ -199,4 +201,23 @@ button:hover, .btn-hover:hover {
   .login--s{
     font-size: 0.8rem;
     margin-top: 0.8rem;
+  }
+
+  .login--sS {
+    color:#553862;
+    font-weight: 600;
+    margin-left: 0.6rem;
+    cursor: pointer;
+  }
+
+  .p-passForgot {
+    display: flex;
+    justify-content: start;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .s-classP{
+      color: #553862;
+      font-weight: 700;
   }

@@ -7,7 +7,7 @@
     overflow: hidden;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0;
-    transform: scale(0.95);
+    transform: scale(0.93);
     transition: box-shadow 0.5s, transform 0.5s;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,6 @@
             width: calc(30% - 9px);
             height:100%;
             display: flex;
-            background: #f1f1f1;
             transition: background 0.5s;
             border-left:solid thin rgba(0,0,0,0.1);
             align-items: center; 

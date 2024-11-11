@@ -3,7 +3,7 @@
 .button-iniciar  {
     margin-top: 2rem;
 }
-
+/*  */
 .in-button {
     background-color: #553862;
     border: none;
@@ -29,14 +29,18 @@
 h4{
     color:#250C30;
     align-content: center;
-    font-weight: 500;
-
+    font-weight: 700;
 }
 
 .destacado{
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #553862;
+  font-weight: 300;
+  font-stretch: expanded;
 }
 
 body {
@@ -57,7 +61,7 @@ main {
 .main-text{
     font-family: "Newsreader", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 2.7rem;
     color:#553862;
@@ -67,7 +71,7 @@ main {
     font-size:1.5rem;
     margin-top: 1rem;
     color: #553862;
-    font-weight: 600;
+    font-weight: 500;
     font-family: "Roboto", sans-serif;
     font-style: normal;
   }

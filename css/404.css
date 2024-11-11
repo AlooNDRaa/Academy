@@ -1,0 +1,29 @@
+.svg-space {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 0px #8405fc,
+               -2px -2px 0px #9d6fe6, 
+               2px -2px 0px #5500c4, 
+               -2px 2px 0px #5110b9; 
+
+}
+
+.svg-space svg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.error-text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    text-align: center;
+}

@@ -8,11 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 2px 2px 0px #8405fc,
-               -2px -2px 0px #9d6fe6, 
-               2px -2px 0px #5500c4, 
-               -2px 2px 0px #5110b9; 
-
 }
 
 .svg-space svg {
@@ -25,5 +20,24 @@
     position: absolute;
     color: rgb(255, 255, 255);
     font-size: 6rem;
-    text-align: center;
+    text-shadow: 2px 2px 0px #8405fc,
+    -2px -2px 0px #9d6fe6, 
+    2px -2px 0px #5500c4, 
+    -2px 2px 0px #5110b9; 
+}
+
+
+div {
+    position: absolute;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: 12rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(180, 35, 224);
 }

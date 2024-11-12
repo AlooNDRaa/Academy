@@ -28,9 +28,10 @@ main {
     justify-content: space-between;
     margin-inline: 2rem;
     align-items: center;
+    
 }
 
-.tittle {
+.title {
     color: #553862;
     font-family: "Vollkorn SC", serif;
     font-weight: 700;
@@ -49,6 +50,14 @@ ul {
 
 li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.escondido {
+    z-index: 9;
+    opacity: 10%;
 }
 
 a {
@@ -76,6 +85,8 @@ a:hover {
     color: #0A142F;
     padding: 0.5rem;
     font-family: "Roboto", sans-serif;
+    margin-top: auto; 
+    border-top: #e2e2e2 solid 1px;
 }
 
 .footer-content-wrapper {

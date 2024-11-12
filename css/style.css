@@ -1,9 +1,7 @@
-
-
 .button-iniciar  {
     margin-top: 2rem;
 }
-/*  */
+
 .in-button {
     background-color: #553862;
     border: none;
@@ -33,14 +31,13 @@ h4{
 }
 
 .destacado{
-  font-size: 2rem;
+  font-size: 2.6rem;
   display: flex;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: "Newsreader", serif;
+  font-style:italic;
   color: #553862;
-  font-weight: 300;
-  font-stretch: expanded;
+  font-weight: 500;
 }
 
 body {
@@ -75,28 +72,3 @@ main {
     font-family: "Roboto", sans-serif;
     font-style: normal;
   }
-
-
-  /* .container-group-imgSvg {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    width: 100%;
-    max-width: 100%;  
-    margin-top: 2rem;
-}
-
-.svg-container {
-    position: absolute;
-    bottom: -8rem;
-    width: auto;
-    height: auto;
-    max-width: 100%; 
-}
-
-.name-logo {
-    width: 26rem;
-    height: auto;
-    border-radius: 2rem;
-    margin: 4rem 0 0 9rem;
-} */

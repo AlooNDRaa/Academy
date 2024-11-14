@@ -1,9 +1,9 @@
 body {
-    background-image: url("../imgs/login-page-white\ \(1\).png");
-    background-blend-mode: luminosity;
-    background-size: cover;
+    /* background-image: url("../imgs/login-page-white\ \(1\).png");
+    background-blend-mode:luminosity; */
+    /* background-size: cover; */
     margin: 0;
-    background-color: #b994d8;
+    background-color: #eff2f9;
     padding: 0;
     height: 100vh; 
 }
@@ -13,18 +13,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; 
+    width: 100%;
 }
 
 .div-hijo-form {
     position: relative; 
     width: 53rem;
     height: max-content;
-    background-color: rgba(255, 255, 255, 0.26); 
+    background-color: #ffffff; 
     border-radius: 1.2rem;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.719); 
+    box-shadow: 0px 4px 8px #c7d1da; 
     backdrop-filter: blur(100px); 
     -webkit-backdrop-filter: blur(10px);
-    border: 2.5px solid rgba(255, 255, 255, 0.541); 
+    border: 2.5px solid #161b1d0c; 
     padding-block: 1.2rem;
 }
 
@@ -35,6 +36,7 @@ body {
     right: 6rem; 
     height: 13rem;
 }
+
 
 
 form {
@@ -49,85 +51,89 @@ form {
     width: 30rem;
 }
 
-div > h4 {
-    font-size: 1.2rem;
-    margin-bottom: 1.8rem;
+/* div > h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
     color: #553862;
-    opacity: 65%;
-}
+    font-weight: 300;
+} */
+
+
 
 .h3-form {
-    font-size: 1.5rem;
-    margin-bottom: 1.2rem;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
     text-align: center;
-    font-weight: 500;
-    color: #553862;
-    opacity: 70%;
+    color: #190019;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 label {
     font-size: 1.2rem;
-    font-weight: 300;
     margin-bottom: 0.2rem;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
 }
 
 input {
-  background-color: rgba(255, 255, 255, 0.678); 
-    border: white 1px solid;
-    padding: 0.9rem;
-    border-radius: 0.5rem;
-    color: black;
+    border: beige 1px solid;
+    box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 0.9rem;
+    color: #553862;
     margin-bottom: 0.2rem;
+    background-color: white;
+}
+
+form input:focus {
+    outline: none;
+    border: 1px solid beige;
+    background-color: #efedf7;
 }
 
 .label-form-checkbox {
-    color: #553862;
+    color: #000000;
+    font-weight: 300;
 }
 
-button, .btn-hover {
+button {
+    /* font-family: "Oswald", sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
-    padding: 0.8rem;
-    border-radius: 0.5rem;
-    margin-block: 0.7rem;
-    font-size: 1rem; /* Ajustado a 16px */
-    font-weight: 600;
-    color: #3C1F49;
-    background-size: 300% 100%;
+    font-optical-sizing:auto;
+    letter-spacing: 3px;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  3px 8px 10px rgba(78, 78, 78, 0.151);
+    border-radius: 1rem;
+    margin-block: 0.4rem;
+    font-size: 1.3rem; 
+    color: #190019;
     cursor: pointer;
-    height: 55px;
+    height: 4rem;
     text-align: center;
-    transition: all .4s ease-in-out;
-    /* box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75); */
 }
 
-button:hover, .btn-hover:hover {
-    background-position: 100% 0;
-    transition: all .4s ease-in-out;
+button:hover{
+  box-shadow:  3px 5px 8px #efedf7;
 }
-
-.btn-hover:focus {
-    outline: none;
-}
-
-
-.btn-hover.color-7 {
-    background-image: linear-gradient(to right, #ffffff, #b994d8, #ffffff, #a445f2);
-    /* box-shadow: 0 4px 12px 0 rgba(126, 52, 161, 0.75); */
-}
-
 
 .custom-checkbox {
-    display: inline-block;
-    position: relative;
+    display: flex;
+    position: absolute;
     padding-left: 1.9rem;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
     user-select: none;
+    text-align: center;
     align-items: center;
   }
   
   .custom-checkbox input {
-    position: absolute;
+    position: relative;
     opacity: 0;
     cursor: pointer;
   }
@@ -139,6 +145,7 @@ button:hover, .btn-hover:hover {
     height: 1.5rem;
     width: 1.5rem;
     background-color: #ffffff;
+    box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.3);
     border-radius: 0.2rem;
   }
   
@@ -148,12 +155,12 @@ button:hover, .btn-hover:hover {
   
   .checkmark:after {
     content: "";
-    position: absolute;
-    display: none;
+    position: relative;
+    display: flex;
   }
   
   .custom-checkbox input:checked ~ .checkmark:after {
-    display: block;
+    display: flex;
   }
   
   .custom-checkbox .checkmark:after {
@@ -167,13 +174,24 @@ button:hover, .btn-hover:hover {
   }
   
 
-  .form-loginforms{
+  div .form-loginforms{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 1rem;
+    align-items: center;
+    text-align: center;
   }
 
-  .register-button{
+  
+
+   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  
+  button .button-inset{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,39 +203,58 @@ button:hover, .btn-hover:hover {
     color: #1b0c22;
   }
 
+  .register-button{
+    background-color: #ffffff;
+    box-shadow:2px 3px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    height: 4rem;
+    width: 9rem;
+    text-align: center;
+    align-items: center;
+  }
+
   .register-button:hover{
-    background-color: #b994d8;
+    background-color: #efedf7;
     color: #1b0c22;
   }
 
  p{
     display: flex;
     justify-content: center;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
     margin-top: 0.5rem;
-    color: #23122b;
+    color: #190019;
     font-weight: 500;
+    text-align: center;
+  }
+
+  div .div-forms {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
+    align-items: center;
   }
 
   .login--s{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: 0.8rem;
   }
 
   .login--sS {
-    color:#553862;
+    color:#190019;
     font-weight: 600;
-    margin-left: 0.6rem;
+    margin-left: 0.4rem;
     cursor: pointer;
   }
 
   .p-passForgot {
-    display: flex;
-    justify-content: start;
     gap: 0.3rem;
     font-size: 0.9rem;
+    margin-top: 1.2rem;
   }
 
   .s-classP{
-      color: #553862;
-      font-weight: 700;
+      color: #190019;
+      font-weight: 600;
   }

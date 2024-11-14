@@ -23,11 +23,11 @@ section div.wrapper {
 }
 
 .SA {
-    background-color: #250C30;
+    background-color: #553862;
     margin-block: 1rem;
     border-radius: 0.5rem;
     padding: 1rem;  
-    color: rgb(240, 223, 255);
+    color: rgb(255, 255, 255);
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -37,6 +37,10 @@ section div.wrapper {
     height: 100%;
     min-height: 9rem; 
     flex-direction: column;
+}
+
+.SA:hover {
+    background-color: #4e276e;
 }
 
 .SA h3 {

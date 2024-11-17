@@ -1,74 +1,260 @@
-.button-iniciar  {
-    margin-top: 2rem;
-}
-
-.in-button {
-    background-color: #553862;
-    border: none;
-    height: 3.5rem;
-    width: 9rem;
-    border-radius: 0.5rem;
+div button{
+    margin-top: 0.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
     cursor: pointer;
-}
-
-.login-button {
-    background-color: #553862;
-    border: none;
-    height: 2.5rem;
-    width: 6rem;
     border-radius: 0.5rem;
-    cursor: pointer;
+    border: none;
+    background-color: #372a28;
+    height: 4rem;
+    width: 12rem;
+    margin-top: 1.7rem;
 }
 
-.login-button:hover, .in-button:hover {
-    background-color: #250C30;
-}
 
-h4{
-    color:#250C30;
-    align-content: center;
-    font-weight: 700;
-}
-
-.destacado{
-  font-size: 2.6rem;
-  display: flex;
-  justify-content: center;
-  font-family: "Newsreader", serif;
-  font-style:italic;
-  color: #553862;
-  font-weight: 500;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+ .in-button:hover {
+    background-color: #1d1514;
 }
 
 main {
-    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-block: 15rem;
+    margin: 8rem 0px 2rem 0px;
 }
 
 .main-text{
-    font-family: "Newsreader", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
+    font-family: "Montserrat", serif;
+    margin: 0;
+    font-weight: 500;
     font-style: normal;
     font-size: 2.7rem;
-    color:#553862;
+    color:#1d1514;
   }
 
   .main-p{
     font-size:1.5rem;
     margin-top: 1rem;
-    color: #553862;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    color: #1d1514;
+    font-weight: 400;
+    font-family: "Montserrat", serif;
     font-style: normal;
   }
+
+
+  .main-pp{
+    font-size:1.8rem;
+    margin-top: 4rem;
+    color: #1d1514;
+    font-weight: 300;
+    font-family: "Montserrat", serif;
+  }
+
+
+
+  /* imagen prodcuto */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    overflow: hidden;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 200%; 
+    height: 100%;
+}
+
+.slide {
+    flex: 1; 
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide button {
+    margin: 30rem 37rem 0 0;
+    background-color:#e7e7e7;
+    font-size: larger;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: rgb(255, 255, 255);
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-50%);
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.h3-off {
+    color: beige;
+    font-size: 5rem;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: 1rem;
+}
+
+.off{
+    color: white;
+    font-size: 1.6rem;
+}
+
+
+/* cards */
+
+
+.sect-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: #1d1514;
+    margin-bottom: 4rem;
+}
+
+.text-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title{
+    color: #1d1514;
+    font-size: 2.5rem;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-weight: 200;
+}
+
+.shop {
+    background-color: rgba(243, 243, 243, 0.993);
+    box-shadow: 6px 5px 1px 0px rgba(0, 0, 0, 0.25);
+    height: 3.5rem;
+    width: 6rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shop:hover{
+    box-shadow:inset 6px 5px 1px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.card{
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    height: 20rem;
+    width: 28rem;
+  
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.068);
+  
+    backdrop-filter: blur(20px);
+  }
+  
+  /* Banner de intro a sections */
+
+  .descubre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h3-infos {
+    color: #1d1514;
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    letter-spacing: 0.4rem;
+    text-shadow: #c0bab9 3px 0px 0px ;
+  }
+
+
+
+  .main_home{
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  
+  .banner-img{
+    height:44.4rem;
+  }
+
+  .dj-banner{
+    margin: 30px 0; 
+    position: relative;
+}
+   .dj-banner .dj-bg{
+      background-size: cover; 
+      width: 100%;
+    }
+   .dj-banner .dj-bg img{
+    display: block; margin: 
+    20px auto;
+     padding: 20px 0;}
+   .dj-banner .dj-text{
+    text-align: center;
+     padding-bottom: 20px;
+    }
+
+
+   @media screen and (min-width:768px){
+      .dj-banner .dj-bg img{margin-right: 100px;}
+      .dj-banner .dj-text{position: absolute; top: 50%; left: 10%; transform: translate(-10%, -50%); width: 50%; text-align: left;}
+      .dj-banner .dj-text h1{font-size: calc(2*1.5vw);}
+      .dj-banner .dj-text p{font-size: calc(1.2*1.5vw);}
+   }

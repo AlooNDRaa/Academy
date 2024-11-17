@@ -1,7 +1,4 @@
 body {
-    /* background-image: url("../imgs/login-page-white\ \(1\).png");
-    background-blend-mode:luminosity; */
-    /* background-size: cover; */
     margin: 0;
     background-color: #eff2f9;
     padding: 0;
@@ -50,14 +47,6 @@ form {
     gap: 0.6rem;
     width: 30rem;
 }
-
-/* div > h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1.4rem;
-    color: #553862;
-    font-weight: 300;
-} */
-
 
 
 .h3-form {
@@ -258,3 +247,6 @@ button:hover{
       color: #190019;
       font-weight: 600;
   }
+
+
+  

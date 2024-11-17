@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/8HB0J1OW3mXYG4Da6g4Zhvl5e3Yk5d5qTGZjoB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/generals.css">
-    <link rel="stylesheet" href="./css/cards.css">
 </head>
 <body>
     <header class="head">
-        <h1 class="title">Astro<span class="span-title">Shop</span></h1>
-        <div class="escondido"><a href="./html/404.html" class="">?</a></div>
+        <h2 class="title">Mystique<span class="span-title">Shop</span></h2>
+        <input type="search" placeholder="Busca productos, marcas y mas" id="Buscador" />
         <nav class="navbar-home">
             <ul class="ul-nav">
                 <li><a href="./index.html">Inicio</a></li>
@@ -29,214 +28,104 @@
                     <button class="login-button">
                         <a class="a-login" href="./html/login.html">Login</a>
                     </button>
-                </li>
             </ul>
         </nav>
     </header>
+    <section class="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        
+        <div class="slides">
+            <div class="slide" style="background-image: url('./imgs/ofertasnew.png')">
+                <button class="vermas-off">
+                    <a href="" class="off-a">
+                        ¡COMPRA AHORA!
+                    </a>
+                </button>
+            </div>
+            <div class="slide" style="background-image: url('./imgs/newbanner.png')">
+                <div class="name">
+                    <div class="new">
+                        <h3 class="h3-off">¡Descubre los nuevos ingresos!</h3>
+                        <h2 class="off">En tu primera compra te llevas un 20% de descuento</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navegación -->
+        <div class="navigation">
+            <label for="slide1" class="nav-btn"></label>
+            <label for="slide2" class="nav-btn"></label>
+        </div>
+    </section>
+    
 
-    <main class="main_home">
-        <h2 class="main-text">¡Explora el universo con nosotros!</h2>
-        <p class="main-p">Descubre un mundo nuevo con nuestros artículos de alta calidad</p>
-        <div class="button-iniciar">
-            <button class="in-button">
-                <a class="a-login" href="./html/Cards.html">Ingresa</a>
-            </button>
+
+   
+   <main class="main_home">
+       <div class="dj-banner">
+           <section class="descubre">
+               <h3 class="h3-infos">
+                   Vive, siente y se tu
+               </h3>
+           </section>
+           <div class="dj-bg">
+               <img class="banner-img" src="./imgs/newCl.png" alt="Imagen de modelos con ropa de colecion verano/primavera">
+            </div>            
         </div>
     </main>
 
-    <h3 class="destacado">Lo más destacado de la semana</h3>
 
-    <section class="sections-container">
-        <!-- Primera tarjeta -->
-        <section class="section">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="top">
-                        <img src="./imgs/telescopio-ultra.jpg" alt="Telescopio X54">
-                    </div>
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h4 class="det-h4">Telescopio X54</h4>
-                                <p>$250</p>
-                            </div>
-                            <div class="buy">
-                                <i class="material-icons">
-                                <span class="material-symbols-outlined">shopping_cart</span></i>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h4 class="det-h4">Telescopio X54</h4>
-                                <p>Added to your cart</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon">
-                        <i class="material-icons">
-                            <span class="material-symbols-outlined">
-                            more_down
-                            </span>
-                        </i>
-                        </div>                    
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Apertura</th>
-                                <th>Focal</th>
-                            </tr>
-                            <tr>
-                                <td>300mm</td>
-                                <td>1200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Diámetro</th>
-                                <th>Peso</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>15kg</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+    <section class="sect-cards">
+        <div class="card">
+            <div class="text-cards">
+                <p class="card-title">Moda</p>
             </div>
-        </section>
-
-        <!-- Segunda tarjeta -->
-        <section class="section">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="top">
-                        <img src="./imgs/telescopioEstelar.jpg" alt="Telescopio Stellar Pro">
-                    </div>
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h4 class="det-h4">Telescopio Stellar Pro</h4>
-                                <p>$75</p>
-                            </div>
-                            <div class="buy">
-                                <i class="material-icons">
-                                <span class="material-symbols-outlined">shopping_cart</span></i>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h4 class="det-h4">Telescopio Stellar Pro</h4>
-                                <p>Added to your cart</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon">
-                        <i class="material-icons">
-                            <span class="material-symbols-outlined">
-                            more_down
-                            </span>
-                        </i>
-                        </div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Resolución</th>
-                                <th>Rango de visión</th>
-                            </tr>
-                            <tr>
-                                <td>0.9 arcsec</td>
-                                <td>Hasta 5.000 años luz</td>
-                            </tr>
-                            <tr>
-                                <th>Lente</th>
-                                <th>Altura</th>
-                            </tr>
-                            <tr>
-                                <td>Vidrio óptico</td>
-                                <td>1.2m</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="card-footer">
+                <button class="shop">
+                    Ver
+                </button>
             </div>
-        </section>
-
-        <!-- Tercera tarjeta -->
-        <section class="section">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="top">
-                        <img src="./imgs/libro.webp" alt="Explorador Galáctico 300">
-                    </div>
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h4 class="det-h4">Guia para aficionados V1</h4>
-                                <p>$99.99 OFF</p>
-                            </div>
-                            <div class="buy">
-                                <i class="material-icons">
-                                <span class="material-symbols-outlined">shopping_cart</span></i>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h4 class="det-h4">Explorador Galáctico 300</h4>
-                                <p>Añadir al carrito</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">Borrar</i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon">
-                    <i class="material-icons">
-                        <span class="material-symbols-outlined">
-                        more_down
-                        </span>
-                    </i>
-                    </div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Campo de visión</th>
-                                <th>Magnificación</th>
-                            </tr>
-                            <tr>
-                                <td>30°</td>
-                                <td>10x - 200x</td>
-                            </tr>
-                            <tr>
-                                <th>Material</th>
-                                <th>Color</th>
-                            </tr>
-                            <tr>
-                                <td>Aluminio</td>
-                                <td>Negro</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+        </div>
+        <div class="card">
+            <div class="text-cards">
+                <p class="card-title">Accesorios y bolsos</p>
             </div>
-        </section>
+            <div class="card-footer">
+                <button class="shop">
+                    Ver
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text-cards">
+                <p class="card-title">Joyeria</p>
+            </div>
+            <div class="card-footer">
+                <button class="shop">
+                    Ver
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text-cards">
+                <p class="card-title">Cuidado facial</p>
+            </div>
+            <div class="card-footer">
+                <button class="shop">
+                    Ver
+                </button>
+            </div>
+        </div>
     </section>
+
 
     
 <footer class="footer">
     <div class="footer-content-wrapper">
-      <div class="logo"><img src="../imgs/Component 1.png" alt="Logo"></div>
+      <div class="logo"><img src="./imgs/blackandwhite/1.png" alt="Logo"></div>
       <div class="footer-content">
-        <div class="footer-info">
-          <p><i class="fa-solid fa-location-dot"></i> Mi dirección super real: calle de la paz</p>
-          <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
-        </div>
         <div class="footer-social">
           <p>Social Media</p>
           <div class="social-icons">

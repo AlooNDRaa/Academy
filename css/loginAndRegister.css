@@ -139,7 +139,7 @@ button:hover{
   }
   
   .custom-checkbox input:checked ~ .checkmark {
-    background-color: #815b92;
+    background-color: #1d1514;
   }
   
   .checkmark:after {

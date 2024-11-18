@@ -322,9 +322,97 @@ input[type="radio"] {
       }
       
 
-   @media screen and (min-width:768px){
-      .dj-banner .dj-bg img{margin-right: 100px;}
-      .dj-banner .dj-text{position: absolute; top: 50%; left: 10%; transform: translate(-10%, -50%); width: 50%; text-align: left;}
-      .dj-banner .dj-text h1{font-size: calc(2*1.5vw);}
-      .dj-banner .dj-text p{font-size: calc(1.2*1.5vw);}
-   }
+      /* MODA SECTION */
+
+        .cards-display{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-block: 6rem;
+        }
+      
+        .card{
+            max-width: 540px;
+            border: none;
+            box-shadow: 6px 5px 10px rgba(146, 145, 145, 0.829);
+        }
+
+        .img-fluid{
+            object-fit: cover;
+            height: 20rem;
+        }
+
+        .card-body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px; 
+            flex-wrap: wrap;
+          }
+        
+          .button-shop, .button-vermas {
+            padding: 10px 20px; 
+            margin-top: 1rem;
+            text-decoration: none;
+            border-radius: 5px; 
+            background-color: #f8f9fa;
+            color: #1b1514;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s ease; 
+            box-shadow:3px 1px 8px rgba(146, 145, 145, 0.829);
+          }
+        
+          .button-shop:hover, .button-vermas:hover {
+            background-color: #1b1514; 
+            color: white;
+          }
+
+        .card-title{
+            font-size: 1.7rem;
+            font-weight: 400;
+            font-family: "Montserrat", serif;
+            margin-bottom: 1rem;
+        }
+
+        .col-md-8{
+            display: flex;
+        }
+
+        /* section joyas */
+
+        .banner {
+            background:url("../imgs/banners/bannermakeup.png");
+            background-size: cover;
+            color: #fff;
+            height: 95vh;
+            min-width: 100%;
+            background-position: 50% 70%;
+          }
+          
+       .banner2 {
+        background:url("../imgs/banners/bannerAccesorios.png");
+        background-size: cover;
+            color: #fff;
+            height: 95vh;
+            min-width: 100%;
+       }
+          
+          
+          
+      /* medias queries */
+      
+      @media screen and (min-width:768px){
+          .dj-banner .dj-bg img{margin-right: 100px;}
+          .dj-banner .dj-text{position: absolute; top: 50%; left: 10%; transform: translate(-10%, -50%); width: 50%; text-align: left;}
+          .dj-banner .dj-text h1{font-size: calc(2*1.5vw);}
+          .dj-banner .dj-text p{font-size: calc(1.2*1.5vw);}
+        }
+        
+  

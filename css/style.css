@@ -1,20 +1,14 @@
 div button{
-    margin-top: 0.4rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
     cursor: pointer;
     border-radius: 0.5rem;
     border: none;
-    background-color: #372a28;
     height: 4rem;
     width: 12rem;
-    margin-top: 1.7rem;
 }
 
-
- .in-button:hover {
-    background-color: #1d1514;
-}
+/* main home */
 
 main {
     display: flex;
@@ -53,7 +47,7 @@ main {
 
 
 
-  /* imagen prodcuto */
+  /* imagen prodcuto home*/
 
 .slider {
     position: relative;
@@ -85,11 +79,18 @@ input[type="radio"] {
 }
 
 
-.slide button {
+.slide .vermas-off {
     margin: 30rem 37rem 0 0;
     background-color:#e7e7e7;
     font-size: larger;
     font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vermas-new{
+    background-color: #ffffffab;
+    font-size: 1.1rem;
+    box-shadow: 6px 5px 8px 0px rgba(255, 255, 255, 0.25);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -143,7 +144,7 @@ input[type="radio"] {
 }
 
 
-/* cards */
+/* sections cards */
 
 
 .sect-cards{
@@ -186,7 +187,7 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-.card{
+.card-menu{
     min-height: 10rem;
     display: flex;
     flex-direction: column;
@@ -205,7 +206,7 @@ input[type="radio"] {
     backdrop-filter: blur(20px);
   }
   
-  /* Banner de intro a sections */
+  /* Banner de intro a sections home*/
 
   .descubre {
     display: flex;
@@ -221,8 +222,6 @@ input[type="radio"] {
     letter-spacing: 0.4rem;
     text-shadow: #c0bab9 3px 0px 0px ;
   }
-
-
 
   .main_home{
     display: flex;
@@ -251,6 +250,77 @@ input[type="radio"] {
      padding-bottom: 20px;
     }
 
+
+
+    /* sercivio al cliente */
+
+    .pb-2{
+        font-family: "Montserrat", serif;
+        color: #1d1514;
+        font-weight: 400;
+    }
+
+    .icon-square {
+        background-color: #ffffff !important;
+        box-shadow: 10px 10px 40px rgba(75, 74, 74, 0.568); 
+    }
+
+    #hanging-icons .col p {
+        text-align: justify;
+        padding: 0; 
+        line-height: 1.6; 
+    }
+
+
+   div .text-body-emphasis {
+        font-size: 1.4rem !important;
+        margin-block: 1.6rem !important;
+    }
+
+    .btn-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #ffffff;
+        margin-block: 1.7rem;
+        height: 3rem;
+        box-shadow:10px 10px 20px rgba(0, 0, 0, 0.164); 
+    }
+
+    .btn-primary:hover {
+        box-shadow: inset  10px 10px rgba(0, 0, 0, 0.164); 
+    }
+
+    .btn-primary:active{
+        background-color: #000000 !important;
+    }
+
+    /* Secciones */
+
+    #carouselExampleIndicators {
+        position: relative; 
+      }
+      
+      #button-slide {
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        background-color: #000000b9;
+        width: 2rem;
+      }
+      
+      .carousel-control-prev {
+        left: 10px; 
+      }
+      
+      .carousel-control-next {
+        right: 10px; 
+      }
+      
 
    @media screen and (min-width:768px){
       .dj-banner .dj-bg img{margin-right: 100px;}

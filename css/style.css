@@ -1,4 +1,4 @@
-div button{
+div button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
     cursor: pointer;
@@ -15,39 +15,40 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    flex: 1;
     margin: 8rem 0px 2rem 0px;
 }
 
-.main-text{
+.main-text {
     font-family: "Montserrat", serif;
     margin: 0;
     font-weight: 500;
     font-style: normal;
     font-size: 2.7rem;
-    color:#1d1514;
-  }
+    color: #1d1514;
+}
 
-  .main-p{
-    font-size:1.5rem;
+.main-p {
+    font-size: 1.5rem;
     margin-top: 1rem;
     color: #1d1514;
     font-weight: 400;
     font-family: "Montserrat", serif;
     font-style: normal;
-  }
+}
 
 
-  .main-pp{
-    font-size:1.8rem;
+.main-pp {
+    font-size: 1.8rem;
     margin-top: 4rem;
     color: #1d1514;
     font-weight: 300;
     font-family: "Montserrat", serif;
-  }
+}
 
 
 
-  /* imagen prodcuto home*/
+/* imagen prodcuto home*/
 
 .slider {
     position: relative;
@@ -64,12 +65,12 @@ input[type="radio"] {
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 200%; 
+    width: 200%;
     height: 100%;
 }
 
 .slide {
-    flex: 1; 
+    flex: 1;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -81,13 +82,13 @@ input[type="radio"] {
 
 .slide .vermas-off {
     margin: 30rem 37rem 0 0;
-    background-color:#e7e7e7;
+    background-color: #e7e7e7;
     font-size: larger;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.vermas-new{
+.vermas-new {
     background-color: #ffffffab;
     font-size: 1.1rem;
     box-shadow: 6px 5px 8px 0px rgba(255, 255, 255, 0.25);
@@ -116,11 +117,11 @@ input[type="radio"] {
     background: rgb(255, 255, 255);
 }
 
-#slide1:checked ~ .slides {
+#slide1:checked~.slides {
     transform: translateX(0);
 }
 
-#slide2:checked ~ .slides {
+#slide2:checked~.slides {
     transform: translateX(-50%);
 }
 
@@ -138,7 +139,7 @@ input[type="radio"] {
     letter-spacing: 1rem;
 }
 
-.off{
+.off {
     color: white;
     font-size: 1.6rem;
 }
@@ -147,7 +148,7 @@ input[type="radio"] {
 /* sections cards */
 
 
-.sect-cards{
+.sect-cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,13 +158,13 @@ input[type="radio"] {
     margin-bottom: 4rem;
 }
 
-.text-cards{
+.text-cards {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card-title{
+.card-title {
     color: #1d1514;
     font-size: 2.5rem;
     font-family: "Montserrat", serif;
@@ -182,237 +183,258 @@ input[type="radio"] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.shop:hover{
-    box-shadow:inset 6px 5px 1px 0px rgba(0, 0, 0, 0.25);
+.shop:hover {
+    box-shadow: inset 6px 5px 1px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
-.card-menu{
+.card-menu {
     min-height: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-  
+
     height: 20rem;
     width: 28rem;
-  
+
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.068);
-  
-    backdrop-filter: blur(20px);
-  }
-  
-  /* Banner de intro a sections home*/
 
-  .descubre {
+    backdrop-filter: blur(20px);
+}
+
+/* Banner de intro a sections home*/
+
+.descubre {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .h3-infos {
+.h3-infos {
     color: #1d1514;
     font-size: 4.5rem;
     text-align: center;
     font-family: "Montserrat", serif;
     letter-spacing: 0.4rem;
-    text-shadow: #c0bab9 3px 0px 0px ;
-  }
+    text-shadow: #c0bab9 3px 0px 0px;
+}
 
-  .main_home{
+.main_home {
     display: flex;
     width: 100%;
     position: relative;
-  }
-  
-  .banner-img{
-    height:44.4rem;
-  }
+}
 
-  .dj-banner{
-    margin: 30px 0; 
+.banner-img {
+    height: 44.4rem;
+}
+
+.dj-banner {
+    margin: 30px 0;
     position: relative;
 }
-   .dj-banner .dj-bg{
-      background-size: cover; 
-      width: 100%;
-    }
-   .dj-banner .dj-bg img{
-    display: block; margin: 
-    20px auto;
-     padding: 20px 0;}
-   .dj-banner .dj-text{
+
+.dj-banner .dj-bg {
+    background-size: cover;
+    width: 100%;
+}
+
+.dj-banner .dj-bg img {
+    display: block;
+    margin:
+        20px auto;
+    padding: 20px 0;
+}
+
+.dj-banner .dj-text {
     text-align: center;
-     padding-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+/* sercivio al cliente */
+
+.pb-2 {
+    font-family: "Montserrat", serif;
+    color: #1d1514;
+    font-weight: 400;
+}
+
+.icon-square {
+    background-color: #ffffff !important;
+    box-shadow: 10px 10px 40px rgba(75, 74, 74, 0.568);
+}
+
+#hanging-icons .col p {
+    text-align: justify;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+div .text-body-emphasis {
+    font-size: 1.4rem !important;
+    margin-block: 1.6rem !important;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    margin-block: 1.7rem;
+    height: 3rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.164);
+}
+
+.btn-primary:hover {
+    box-shadow: inset 10px 10px rgba(0, 0, 0, 0.164);
+}
+
+.btn-primary:active {
+    background-color: #000000 !important;
+}
+
+/* Secciones */
+
+#carouselExampleIndicators {
+    position: relative;
+}
+
+#button-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000b9;
+    width: 2rem;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+
+/* MODA SECTION */
+
+.cards-display {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-block: 6rem;
+}
+
+.card {
+    max-width: 540px;
+    border: none;
+    box-shadow: 6px 5px 10px rgba(146, 145, 145, 0.829);
+}
+
+.img-fluid {
+    object-fit: cover;
+    height: 20rem;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.button-shop,
+.button-vermas {
+    padding: 10px 20px;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #1b1514;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+    box-shadow: 3px 1px 8px rgba(146, 145, 145, 0.829);
+}
+
+.button-shop:hover,
+.button-vermas:hover {
+    background-color: #1b1514;
+    color: white;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: "Montserrat", serif;
+    margin-bottom: 1rem;
+}
+
+.col-md-8 {
+    display: flex;
+}
+
+/* section joyas */
+
+.banner {
+    background: url("../imgs/banners/bannermakeup.png");
+    background-size: cover;
+    color: #fff;
+    height: 95vh;
+    min-width: 100%;
+    background-position: 50% 70%;
+}
+
+.banner2 {
+    background: url("../imgs/banners/bannerAccesorios.png");
+    background-size: cover;
+    color: #fff;
+    height: 95vh;
+    min-width: 100%;
+}
+
+
+
+/* medias queries */
+
+@media screen and (min-width:768px) {
+    .dj-banner .dj-bg img {
+        margin-right: 100px;
     }
 
-
-
-    /* sercivio al cliente */
-
-    .pb-2{
-        font-family: "Montserrat", serif;
-        color: #1d1514;
-        font-weight: 400;
+    .dj-banner .dj-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        width: 50%;
+        text-align: left;
     }
 
-    .icon-square {
-        background-color: #ffffff !important;
-        box-shadow: 10px 10px 40px rgba(75, 74, 74, 0.568); 
+    .dj-banner .dj-text h1 {
+        font-size: calc(2*1.5vw);
     }
 
-    #hanging-icons .col p {
-        text-align: justify;
-        padding: 0; 
-        line-height: 1.6; 
+    .dj-banner .dj-text p {
+        font-size: calc(1.2*1.5vw);
     }
-
-
-   div .text-body-emphasis {
-        font-size: 1.4rem !important;
-        margin-block: 1.6rem !important;
-    }
-
-    .btn-primary {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        background-color: #ffffff;
-        margin-block: 1.7rem;
-        height: 3rem;
-        box-shadow:10px 10px 20px rgba(0, 0, 0, 0.164); 
-    }
-
-    .btn-primary:hover {
-        box-shadow: inset  10px 10px rgba(0, 0, 0, 0.164); 
-    }
-
-    .btn-primary:active{
-        background-color: #000000 !important;
-    }
-
-    /* Secciones */
-
-    #carouselExampleIndicators {
-        position: relative; 
-      }
-      
-      #button-slide {
-        position: absolute; 
-        top: 50%; 
-        transform: translateY(-50%);
-        display: flex;
-        align-items: center; 
-        justify-content: center; 
-        background-color: #000000b9;
-        width: 2rem;
-      }
-      
-      .carousel-control-prev {
-        left: 10px; 
-      }
-      
-      .carousel-control-next {
-        right: 10px; 
-      }
-      
-
-      /* MODA SECTION */
-
-        .cards-display{
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-block: 6rem;
-        }
-      
-        .card{
-            max-width: 540px;
-            border: none;
-            box-shadow: 6px 5px 10px rgba(146, 145, 145, 0.829);
-        }
-
-        .img-fluid{
-            object-fit: cover;
-            height: 20rem;
-        }
-
-        .card-body{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-        }
-        
-        .button-container {
-            display: flex;
-            justify-content: space-evenly;
-            gap: 10px; 
-            flex-wrap: wrap;
-          }
-        
-          .button-shop, .button-vermas {
-            padding: 10px 20px; 
-            margin-top: 1rem;
-            text-decoration: none;
-            border-radius: 5px; 
-            background-color: #f8f9fa;
-            color: #1b1514;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            transition: background-color 0.3s ease; 
-            box-shadow:3px 1px 8px rgba(146, 145, 145, 0.829);
-          }
-        
-          .button-shop:hover, .button-vermas:hover {
-            background-color: #1b1514; 
-            color: white;
-          }
-
-        .card-title{
-            font-size: 1.7rem;
-            font-weight: 400;
-            font-family: "Montserrat", serif;
-            margin-bottom: 1rem;
-        }
-
-        .col-md-8{
-            display: flex;
-        }
-
-        /* section joyas */
-
-        .banner {
-            background:url("../imgs/banners/bannermakeup.png");
-            background-size: cover;
-            color: #fff;
-            height: 95vh;
-            min-width: 100%;
-            background-position: 50% 70%;
-          }
-          
-       .banner2 {
-        background:url("../imgs/banners/bannerAccesorios.png");
-        background-size: cover;
-            color: #fff;
-            height: 95vh;
-            min-width: 100%;
-       }
-          
-          
-          
-      /* medias queries */
-      
-      @media screen and (min-width:768px){
-          .dj-banner .dj-bg img{margin-right: 100px;}
-          .dj-banner .dj-text{position: absolute; top: 50%; left: 10%; transform: translate(-10%, -50%); width: 50%; text-align: left;}
-          .dj-banner .dj-text h1{font-size: calc(2*1.5vw);}
-          .dj-banner .dj-text p{font-size: calc(1.2*1.5vw);}
-        }
-        
-  
+}

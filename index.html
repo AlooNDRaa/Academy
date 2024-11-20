@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -14,38 +13,8 @@
     <link rel="stylesheet" href="./css/generals.css">
 </head>
 <body>
-    <header class="head">
-        <h2 class="title">Mystique<span class="span-title">Shop</span></h2>
-        <input type="search" placeholder="Busca productos, marcas y mas" id="Buscador" />
-        <nav class="navbar-home">
-            <ul class="ul-nav">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./html/helpcenter.html">Soporte</a></li>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Articulos
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="./html/Cards.html">Moda</a></li>
-                        <li><a class="dropdown-item" href="#">Joyas</a></li>
-                        <li><a class="dropdown-item" href="#">Accesorios y bolsos</a></li>
-                        <li><a class="dropdown-item" href="#">Belleza</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                <li><a href="./html/shoopCart.html"><span class="material-symbols-outlined">
-                    shopping_cart
-                    </span></a> 
-                    <!-- , agrandar iconos y cambiar size de las fuentes. Cuidado con los popout en los telefonos-->
-                     <!-- Invertir los botones de compra y ver mas, y el color del boton de compra. Definiciòn de los botones y marcar relevancia -->
-                </li>
-                    <button class="login-button">
-                        <a class="a-login" href="./html/login.html">Login</a>
-                    </button>
-            </ul>
-        </nav>
-    </header>
+
+    <div id="header"></div>
     <section class="slider">
         <input type="radio" name="slider" id="slide1" checked>
         <input type="radio" name="slider" id="slide2">
@@ -148,32 +117,8 @@
     </section>
 
 
-    
-<footer class="footer">
-    <div class="footer-content-wrapper">
-      <div class="logo"><img src="./imgs/blackandwhite/1.png" alt="Logo"></div>
-      <div class="footer-content">
-        <div class="footer-social">
-          <p>Social Media</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-links">
-      <a href="./html/aboutUs.html">SOBRE NOSOTROS</a>
-      <a href="./html/contact.html">CONTACTANOS</a>
-      <a href="./html/helpcenter.html">AYUDA</a>
-      <a href="./html/helpcenter.html">POLITICAS DE PRIVACIDAD</a>
-    </div>
-    <div class="footer-copyright">
-      <p>Copyright © 2024 NTTDATA ACADEMY Alondra</p>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div id="footer"></div>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>

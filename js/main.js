@@ -30,7 +30,9 @@ document.getElementById("header").innerHTML = `
         </nav>
     </header>
 
-`
+`;
+
+
 
 
 document.getElementById("footer").innerHTML = `
